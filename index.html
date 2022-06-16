@@ -24,8 +24,8 @@
     <main>
       <nav class="navbar flex justify-between items-center">
         <div class="logo">
-          <img class="menu" src="./images/icon-menu.svg" alt="" />
-          <a href=""><img src="./images/logo.svg" alt="" /></a>
+          <img class="menu" src="./images/icon-menu.svg" alt="Menu" />
+          <a href=""><img src="./images/logo.svg" alt="Logo" /></a>
         </div>
         <ul class="navlist flex-1 flex ml-10">
           <li><a href="">Collections</a></li>
@@ -33,12 +33,12 @@
           <li><a href="">Women</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
-          <img class="close" src="./images/icon-close.svg" alt="" />
+          <img class="close" src="./images/icon-close.svg" alt="Close" />
         </ul>
         <div class="right_panel flex items-center">
           <div class="your_cart">
             <div class="cart-img">
-              <img class="cart" src="./images/icon-cart.svg" alt="" />
+              <img class="cart" src="./images/icon-cart.svg" alt="Cart" />
               <span class="prod_no flex justify-center items-center">1</span>
             </div>
             <div class="cart_down">
@@ -46,7 +46,10 @@
               <div class="cart_prods flex justify-center items-center pt-5">
                 <span class="empty"> Your cart is empty</span>
                 <div class="prod flex items-center gap-x-3">
-                  <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+                  <img
+                    src="./images/image-product-1-thumbnail.jpg"
+                    alt="added product"
+                  />
                   <div>
                     <h1>Fall Limited Edition Sneakers</h1>
                     <div>
@@ -54,12 +57,16 @@
                       ><span class="total ml-4">$375.00</span>
                     </div>
                   </div>
-                  <img class="delete" src="./images/icon-delete.svg" alt="" />
+                  <img
+                    class="delete"
+                    src="./images/icon-delete.svg"
+                    alt="delete"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <img class="user" src="./images/image-avatar.png" alt="" />
+          <img class="user" src="./images/image-avatar.png" alt="User" />
         </div>
       </nav>
       <section class="product_section flex gap-x-5 p-20 mx-auto">
@@ -96,7 +103,9 @@
           <div class="anim2 buy flex mt-5 gap-x-3">
             <div class="quantity">
               <button class="decre">-</button>
-              <input class="quantity_no" type="number" value="1" readonly />
+              <label for="">
+                <input class="quantity_no" type="number" value="1" readonly
+              /></label>
               <button class="incre">+</button>
             </div>
             <button class="add_to_cart flex items-center gap-x-3">
