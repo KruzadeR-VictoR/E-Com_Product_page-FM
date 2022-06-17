@@ -14,10 +14,23 @@
 
     <title>Frontend Mentor | E-commerce product page</title>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <!-- TailwindCSS Linked -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <!-- Navbar  -->
@@ -35,7 +48,13 @@
           <li><a href="">Women</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
-          <img class="close" src="./images/icon-close.svg" alt="Close" />
+          <li class="close">
+            <img
+              src="./images/icon-close.svg"
+              alt="Close"
+              aria-label="close icon"
+            />
+          </li>
         </ul>
         <div class="right_panel flex items-center">
           <div class="your_cart">
@@ -105,7 +124,7 @@
           <div class="anim2 buy flex mt-5 gap-x-3">
             <div class="quantity">
               <button class="decre">-</button>
-              <label for="">
+              <label>
                 <input class="quantity_no" type="number" value="1" readonly
               /></label>
               <button class="incre">+</button>
@@ -126,17 +145,4 @@
       </section>
     </main>
   </body>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
-    integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <script src="./script.js"></script>
 </html>

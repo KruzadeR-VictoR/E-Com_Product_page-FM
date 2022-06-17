@@ -76,21 +76,21 @@ del.addEventListener("click", () => {
 
 //| Animation
 
-let tl = gsap.timeline({
-  defaults: {
-    duration: 1,
-    ease: "power3",
-    opacity: 0,
-    stagger: { amount: 0.3 },
-  },
-});
+// let tl = gsap.timeline({
+//   defaults: {
+//     duration: 1,
+//     ease: "power3",
+//     opacity: 0,
+//     stagger: { amount: 0.3 },
+//   },
+// });
 
-tl.from(".navbar", {
-  y: -100,
-});
-tl.from(".anim1", {
-  x: -100,
-});
-tl.from(".anim2", {
-  y: 100,
-});
+// tl.from(".navbar", {
+//   y: -100,
+// });
+// tl.from(".anim1", {
+//   x: -100,
+// });
+// tl.from(".anim2", {
+//   y: 100,
+// });
