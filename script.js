@@ -74,23 +74,37 @@ del.addEventListener("click", () => {
   prodNo.classList.remove("visible");
 });
 
+//| Hamburger Menu
+const Menu = document.querySelector(".menu");
+const clos = document.querySelector(".close");
+const navList = document.querySelector(".navlist");
+console.log(Menu);
+Menu.addEventListener("click", () => {
+  navList.style.left = "0";
+  document.body.classList.add("overlay");
+});
+
+clos.addEventListener("click", () => {
+  navList.style.left = "-100%";
+});
+
 //| Animation
 
-let tl = gsap.timeline({
-  defaults: {
-    duration: 1,
-    ease: "power3",
-    opacity: 0,
-    stagger: { amount: 0.3 },
-  },
-});
+// let tl = gsap.timeline({
+//   defaults: {
+//     duration: 1,
+//     ease: "power3",
+//     opacity: 0,
+//     stagger: { amount: 0.3 },
+//   },
+// });
 
-tl.from(".navbar", {
-  y: -100,
-});
-tl.from(".anim1", {
-  x: -100,
-});
-tl.from(".anim2", {
-  y: 100,
-});
+// tl.from(".navbar", {
+//   y: -100,
+// });
+// tl.from(".anim1", {
+//   x: -100,
+// });
+// tl.from(".anim2", {
+//   y: 100,
+// });

@@ -92,7 +92,7 @@ $paleOrange: hsl(25, 100%, 94%);
       width: 50%;
       position: absolute;
       top: 0;
-      left: 0%;
+      left: -100%;
       background-color: white;
       margin: 0;
       justify-content: start !important;
@@ -100,7 +100,7 @@ $paleOrange: hsl(25, 100%, 94%);
       gap: 10px;
       padding-top: 7rem;
       padding-left: 1rem;
-
+      transition: all 250ms ease-in-out;
       .close {
         display: block;
         position: absolute;
@@ -326,6 +326,7 @@ $paleOrange: hsl(25, 100%, 94%);
         @media screen and (max-width: 600px) {
           display: flex;
           justify-content: space-between;
+          align-items: center;
         }
 
         .decre,
@@ -341,8 +342,7 @@ $paleOrange: hsl(25, 100%, 94%);
           width: 50px;
           max-width: 100px;
           text-align: center;
-          background-color: $lightGrayishBlue;
-
+          background-color: $lightGrayishBlue;          
           @media screen and (max-width: 600px) {
             width: 100%;
           }
@@ -400,3 +400,4 @@ $paleOrange: hsl(25, 100%, 94%);
 .cart_visible {
   display: block !important;
 }
+
