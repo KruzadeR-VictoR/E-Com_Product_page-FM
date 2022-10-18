@@ -7,7 +7,7 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 button {
-  border: none;    
+  border: none;
   cursor: pointer;
 }
 
@@ -195,6 +195,11 @@ $paleOrange: hsl(25, 100%, 94%);
         .prod {
           align-items: center;
           gap: 0.75rem;
+          h1 {
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: $darkgrayishBlue;
+          }
         }
 
         .empty {
@@ -328,6 +333,7 @@ $paleOrange: hsl(25, 100%, 94%);
     }
 
     .description {
+      line-height: 1.5em;
       margin-top: 1.25rem;
       color: $darkgrayishBlue;
 
@@ -394,7 +400,7 @@ $paleOrange: hsl(25, 100%, 94%);
         .decre,
         .incre {
           border: none;
-          padding: 0.5rem 1rem;
+          padding: 0.8rem 1rem;
           font-size: 1.3rem;
           font-weight: 700;
           color: $orange;
